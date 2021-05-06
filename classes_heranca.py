@@ -119,4 +119,32 @@ cl.desenhe()
 class Quadro:
     def __init__(self):
         self.figuras_geometricas = []
-    
+    def incluir_na_lista(self, figura):
+        self.figuras_geometricas.append(figura)
+    def remover(self, idx):
+        self.figuras_geometricas.pop(idx)
+    def desenhe(self):
+        for figura in self.figuras_geometricas:
+            figura.desenhe()
+    def contador(self):
+        for idx, f in enumerate(self.figuras_geometricas):
+            print("==========", idx, "==========")
+            print(self.figuras_geometricas[idx])
+
+qd = Quadro()
+qd.incluir_na_lista(Retangulo(0, 0, 2, 4))
+qd.incluir_na_lista(Quadrado(0, 0, 4, 4))
+qd.incluir_na_lista(Poligono(0, 0, 5, 5, 2))
+qd.incluir_na_lista(Esfera(0, 0, 0, 10))
+qd.incluir_na_lista(Cubo(0, 0, 0, 6))
+qd.incluir_na_lista(Cilindro(0, 0, 0, 10, 20))
+
+qd.desenhe()
+qd.contador()
+
+qd.remover(2)
+
+print("\n********* Removendo figura *********\n")
+
+qd.desenhe()
+qd.contador()
