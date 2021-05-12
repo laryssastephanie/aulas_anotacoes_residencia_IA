@@ -80,3 +80,4 @@ print(f"Q3 == C4: {q3 == c4}")
 quadro.remover_forma(c4) # c4 nao está dentro da lista, mas é igual ao c3
 
 print(len(quadro.formas_geometricas))
+

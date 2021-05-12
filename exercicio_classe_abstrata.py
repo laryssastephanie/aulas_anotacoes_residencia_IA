@@ -344,11 +344,10 @@ try:
     qd.incluir_na_lista(cl1)
     qd.incluir_na_lista(cl2)
 except limiteMax as e:
-   print(f"\nOcorreu um erro: {e.__class__}\n")
+   print(e)
 except NameError:
     print(f"\n Forma inválida\n")
 
-qd.desenhe()
 qd.contador()
 
 try:
@@ -360,7 +359,6 @@ except TypeError:
 
 print("\n********* Removendo figura *********\n")
 
-qd.desenhe()
 qd.contador()
 
 print("\n********** Removendo Outra Figura **********\n")

@@ -29,7 +29,7 @@ class EquiTriang(Triangulo):
         self._base, self._altura = base, altura # não dá problema, pois EquiTriang é uma subclasse de Triangulo, portanto é acessível. 
 
 class Triangulo:
-    def __init__(self, baes=1, altura =1):
+    def __init__(self, base=1, altura =1):
         self.__base, self.__altura = base, altura # neste caso, se tentar acessar os atributos base e altura, irá retornar um 'erro' dizendo que eles não existem, pois são PRIVADOS.
 
 # porém, dá pra acessar desta forma, por exemplo: t1._Triangulo__base

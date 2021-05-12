@@ -1,3 +1,5 @@
+"""Anotações"""
+
 # Exceções - sinalizam erros especiais
 # Só precisam ser tratados quando fizer sentido
 # Muitas classes de exceções disponíveis
@@ -64,12 +66,45 @@ def raiseErroDeEscrita():
 def raiseErroDeLeitura():
     raise ErroDeLeitura()
 
-print(raiseErroDeIO())
-print(raiseErroDeEscrita())
-print(raiseErroDeLeitura())
+# print(raiseErroDeIO())
+# print(raiseErroDeEscrita())
+# print(raiseErroDeLeitura())
 
 for func in (raiseErroDeIO, raiseErroDeEscrita, raiseErroDeLeitura):
     try:
         func()
     except ErroDeIO as e:
         print(f"Erro de IO: {e.__class__}") # pode ter várias except
+
+# raise = notifica que algo deu errado
+# exemplo parecido com os exercicios de formas geometricas:
+
+class ErroDeIndice(Exception):
+    pass
+
+class ErroDeIndiceForaDoIntervalo(Exception):
+    pass
+
+
+class Quadro:
+    formas_geometricas = []
+
+    def adicionar_forma(self, forma):
+        Quadro.formas_geometricas.append(forma)
+
+
+    def remover_forma_em(self, idx = 0):
+        if not isinstance(idx, int):
+            raise ErroDeIndice("Valor não inteiro")
+        if idx < 0 or idx > len(Quadro.formas_geometricas) -1:
+            raise ErroDeIndiceForaDoIntervalo("Valor fora do intervalo")
+
+qd = Quadro()
+
+try:
+    qd.remover_forma_em(5)
+except ErroDeIndice as e:
+    print(e)
+except ErroDeIndiceForaDoIntervalo as e: # 'as e' para pegar a msg do raise do erro criado. Se nao tiver o 'as e', pode printar qlqr outra msg aqui.
+    print(e)
+print(len(qd.formas_geometricas))
