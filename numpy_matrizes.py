@@ -71,4 +71,3 @@ np.max(a) # maior elemento
 np.min(a) # menor elemento
 np.sum(a) # soma de todos os elementos
 np.std(a) # desvio padrão
-
