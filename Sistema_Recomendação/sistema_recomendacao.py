@@ -126,5 +126,43 @@ class SistemaDeRecomendacao:
             print(e)
             sys.exit(1)
 
+class AlgoritimoSimilaridade(SistemaDeRecomendacao):
+    def __init__(self):
+        super().__init__()
+
+    @abstractmethod
+    def calcula(self):
+        pass
+
+class SimilaridadeCosseno(AlgoritimoSimilaridade):
+    def __init__(self):
+        super().__init__()
+
+    def calcula(self, usuario_ref, outro_usuario):
+        print(usuario_ref.id_usuario)
+        print(str(outro_usuario.id_usuario))
+        self.vetor_usuario_referencia = self.usuarios[usuario_ref.id_usuario].as_numpy_array(len(self.filmes))
+        self.vetor_outro_usuario = sr.usuarios[outro_usuario.id_usuario].as_numpy_array(len(self.filmes))
+        similaridade = np.dot(self.vetor_usuario_referencia, self.vetor_outro_usuario)/(np.sqrt(sum
+                        (self.vetor_usuario_referencia**2))*np.sqrt(sum(self.vetor_outro_usuario**2)))
+        return similaridade
+
+class SimilaridadePearson(AlgoritimoSimilaridade):
+    def __init__(self):
+        super().__init__()
+
+    def calcula(self, usuario_ref, outro_usuario):
+        self.vetor_usuario_referencia  = self.usuarios[self.id_usuario].as_numpy_array(len(self.filmes))
+        self.vetor_outro_usuario = sr.usuarios[outro_usuario.id_usuario].as_numpy_array(len(self.filmes))
+        self.media_vetor_usuario_referencia = np.average(self.vetor_usuario_referencia)
+        self.media_vetor_outro_usuario = np.average(self.vetor_outro_usuario)
+
+        a = np.sum(self.vetor_usuario_referencia - self.media_vetor_usuario_referencia) * np.sum
+        b = np.sqrt(sum(self.vetor_usuario_referencia - self.vetor_usuario_referencia)**2) * np.sqrt(
+            sum(self.vetor_outro_usuario) - self.media_vetor_outro_usuario)**2
+        p = a/b
+        return p
+        
+
 sr = SistemaDeRecomendacao()
 sr.carregar_do_diretorio("/home/laryssacosta/workspace/python-warmup/ml-100k")
