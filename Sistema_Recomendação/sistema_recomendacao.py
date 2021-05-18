@@ -2,7 +2,7 @@ import sys
 import numpy as np
 
 class Usuario:
-    """definindo atributos"""
+    # definindo atributos
     def __init__(self, id_usuario, idade, genero, ocupacao, cep):
         self.id_usuario = id_usuario
         self.idade = idade
@@ -29,6 +29,7 @@ class Usuario:
             vetor_usuario[int(avaliacao.filme.id_filme)-1] = int(avaliacao.nota) # -1 para incluir o 0
 
         return vetor_usuario
+        
     # exercicios serao baseados nessa def:
     def similaridade(self, outro_usuario, tamanho, algoritmo_de_similaridade):
         return algoritmo_de_similaridade.calcula(self.as_numpy_array(tamanho)), outro_usuario.as_numpy_array(tamanho)

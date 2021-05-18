@@ -43,3 +43,6 @@
 - No caso de soma:
     - 0 = mantém numero de colunas
     - 1 = mantém número de linhas
+
+#### Aula 9 - 17/05 - 
+- código 
