@@ -60,3 +60,50 @@ Frequências acumuladas: número de vezes que uma variável assume um valor infe
 ### Histogramas
 - Gráfico de barras contíguas, com as bases proporcionais aos intervalos das classes e a área de cada retângulo proporcional à respectiva frequência;
 - Quanto mais dados tivermos em cada classe, mais alto deve ser o retângulo;
+
+### Análise Bidimensional
+- Frequentemente estamos interessados em analisar o comportamento conjunto de duas ou mais variáveis aleatórias;
+Encontrar as possíves relações ou associações entre as duas variáveis:
+    - Detectadas por meio de métodos gráficos e medidas numéricas.
+    - Ex: Existe relação entre a altura de pessoas e a região onde ela nasceu?
+    - Qual a frequência esperada de uma pessoa dessa população ter, digamos, mais de 170cm?
+        - ex: 500 a cada 1000 pessoas possuem mais que 170cm.
+- Incorporar conhecimento para melhorar o entendimento sobre os comportamentos das variáveis;
+- Conhecer o grau de dependência entre duas variáveis:
+    - prever melhor o resultado de uma delas ao conhecer a outra;
+    Exemplo de dependencia: renda familiar e classe social.
+- Quando consideramos duas variáveis (ou dois conjunto de dados), podemos ter três situações:
+    - Duas variáveis qualitativas;
+    - Duas variáveis quantitativas;
+    - Uma de cada.
+- Gráfico de dispersão de dados - uma maneira simples de verificar a relação entre duas variáveis.
+- Tipos de associações:
+    - Assoc. linear direta (ou positiva)
+    - Dependência linear inversa (ou negativa)
+
+### Medidas de Dependência
+- Indica que conforme uma variável muda de valor, a outra variável tende a mudar em uma direção específica;
+    - Possível usar o valor de uma variável para prever o valor da outra;
+- Covariância: uma medida da tendência de duas variáveis variarem juntas;
+    - Possui unidade;
+    - Difícil de interpretar;
+Correlação: quantificar a força da relaçao entre duas variáveis;
+    - Normalização pelo desvio padrão;
+    - Sem unidade associada.
+    - Cálculo do Z-score - variação entre -1 e 1;
+    - Correlação de Pearson:
+        - Dependência Linear (!!!)
+    
+### Probabilidades
+- Distribuição de frequências é importante para avaliarmos a variabilidade das observações de um fenômeno;
+    - Medidas de posição e variabilidade;
+- Espaço amostral - enumeração de todos os resultador possíveis do experimento em questão;
+- Probabilidade para cada ponto amostral. A probabilidade do que chamaremos de um evento aleatório ou simplesmente evento;
+
+### Função Probabilidade
+...
+### Função Densidade de Probabilidade
+- Para o caso de variáveis contínuas;
+- Cálculo de probabilidade para um dado intervalo;
+- Valor = 0 em um ponto arbitrariamente pequeno;
+- Teoricamente, qualquer função f, que seja não negativa e cuja área total sob a curva seja igual à unidade, caracterizará uma v.a. contínua.
