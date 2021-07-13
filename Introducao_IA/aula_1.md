@@ -1,4 +1,4 @@
-## Inteligência Artificial
+## Inteligência Artificial - Aula 1
 - O que é? 
 - Coisas complicadas demais para serem feitas por seres humanos;
 - Filme 2001: Odisseia no Espaço - HAL 9000;
@@ -138,7 +138,3 @@
     - Descobrir padrões que não eram aparentes;
 - Utilização como um processo iterativo, em busca de soluções a partir dos dados, e otimização do uso dos dados e algoritmos;
 - Esse processo pode ser automatizado em algum nível;
-
-### Aprendizagem Estatística
-...
-
