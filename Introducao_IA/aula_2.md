@@ -74,7 +74,7 @@
 - Espaço de hipóteses H;
 - Uma hipótese consistente concorda com todos os dados;
 - Como podemos escolher entre várias hipóteses consistentes?
-    - Ockham
+    - Ockham's razor
     - Escolhendo o espaço de hipóteses;
     - Polinomial em X vs sin(X);
 
