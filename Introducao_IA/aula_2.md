@@ -55,7 +55,7 @@
 - Semi-Supervisionado;
     - Modelos Generativos;
 
-#### Aprendizado Supervisionado
+### Aprendizado Supervisionado
 - Envolve modelar a relação entre medidas características dos dados e algum rótulo associado aos dados;
 - O modelo determinado pode ser usado para aplicar rótulos a novos dados;
 - Tipos de algoritmos supervisionados;
@@ -90,3 +90,50 @@
 - A maneira como avaliamos as previsões de classificação e regressão variam e não se sobrepõe;
     - As previsões de classificação podem ser avaliadas usando acurácia, enquanto as previsões de regressão não;
     - As previsões de regressão podem ser avaliadas usando a raiz do erro médio quadrático, enquanto as previsões de classificação não;
+
+### Aprendizado não Supervisionado
+- Dados de treinamento não são rotulados;
+- O sistema tenta aprender sem referência ou dados anotados;
+    - Ex: com base em dados sobre os visitantes de um site, executar um algoritmo para tentar detectar grupos de visitantes semelhantes;
+        - Em nenhum momento você diz ao algoritmo a qual grupo um visitante pertence: ele encontra essas conexões sem ajuda;
+- É difícil determinar a validade das inferências tiradas da saída da maioria dos algoritmos de aprendizagem não supervisionados;
+    - Eficácia é uma questão de opinião e não pode ser verificada diretamente;
+- Redução da dimensionalidade;
+    - Tentativa de identificar variedades de baixa dimensão do espaço X que representam alta densidade de dados;
+    - Fornece informações sobre as associações entre as variáveis;
+        - Se elas podem ou não ser consideradas como funções de um conjunto menor de variáveis 'latentes';
+- Agrupamento:
+    - Encontrar várias regiões convezas no espaço X que contém modas de P(X);
+    - Indica se P(X) pode ser representado por uma mistura de densidades mais simples que representam tipos ou classes distintas de observações;
+
+### Características Fundamentais
+- Para qualquer problema a ser investigado como ML temos algumas características comuns:
+    - Amostras (Samples): linhas na base de dados;
+    - Características (Features): colunas na base de dados;
+    - Matriz de Características: combinação de linhas e características;
+    - Vetor alvo: coluna que se deseja predizer;
+- Algoritmos de ML normalmente necessitam de uma grande quantidade de dados para apresentar uma solução satisfatória;
+- Dados precisam ser representativos em relação ao problema que está sendo investigado;
+- Considerar a influência das categorias em relação a base completa;
+- Qualidade dos dados:
+    - Considerar detectar e se possível eliminar Outliers e Ruídos;
+    - Descartar dados redundantes;
+    - São desnecessários quando colocados no contexto de outro atributo;
+    - Ex: Classe social e renda mensal;
+    - Descartar dados irrelevantes;
+    - Não tem relação com o atributo-alvo;
+    - Ex: CPF e doença;
+
+### Projeto iterativo de ML
+- Definir o problema que se deseja atacar com um modelo preditivo;
+- Organizar os dados de acordo com o problema definido;
+- Definir uma métrica de avaliação;
+- Separar os dados em treino e teste de acordo com a métrica;
+- Inspecionar a solução;
+- Propor melhorias no modelo ou organização dos dados;
+- O processo de organização de dados de acordo com o modelo definido envolve as seguintes atividades;
+    - Trocar dados categóricos ou ordinais por números;
+    - Alterar a escala dos dados;
+    - Eliminar valores faltantes ou subtituir por outro valor;
+    - Separar variáveis preditoras e variáveis alvo;
+    - Dividir a base em treino e teste.
