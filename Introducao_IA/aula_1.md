@@ -104,7 +104,7 @@
         Ex: puxar a mão de um fogão quente é um reflexo que tem mais sucesso do que uma ação mais lenta realizada após uma deliberação cuidadosa.
 
 ### Subáreas da IA
-![subareas da IA](subareas_da_IA.png)
+![subareas da IA](imagens/subareas_da_IA.png)
 
 - Busca
 - Representação de conhecimento e raciocínio

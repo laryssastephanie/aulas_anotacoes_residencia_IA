@@ -40,7 +40,7 @@
             h(θ; X) = θ0 + θ1X
 - Utilizando notação de matrizes:
     - Considerando X⁰ = 1 para generalização:
-    ![matriz](matriz.png)
+    ![matriz](imagens/matriz.png)
 
     - Objetivo: achar melhor reta (θ) de acordo com os dados de treinamento
 - E o que seria a melhor reta?

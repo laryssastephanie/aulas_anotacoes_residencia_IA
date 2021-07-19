@@ -23,7 +23,7 @@
             Data + Results ==> Computation ==> Program
 
 - Ciclo de desenvolvimento
-![ciclo de desenvolvimento](ciclo_desenv.png)
+![ciclo de desenvolvimento](imagens/ciclo_desenv.png)
 
 #### Aprendizagem Estatística
 - Até a década de 90, era um problema de estimativa de função a partir de uma determinada coleção de dados;
