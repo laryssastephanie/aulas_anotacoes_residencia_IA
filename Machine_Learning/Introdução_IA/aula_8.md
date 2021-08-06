@@ -22,3 +22,9 @@
         - Função convexa: um ótimo global;
         - Função não convexa: ótimo local, ótimo global;
         - GD busca a 'melhoe' solução a partir de um ponto inicial. Com base em informações dadas pela derivada da função, ele tende a encontrar um ótimo local ou global. Caso a função seja convexa, ele encontrará o ótimo global.
+### Regressão multivariada - Revisão
+- Suponha que tenhamos mais variáveis pare representar o problema, visto que utilizar apenas o tamanho da casa não é suficiente para estimarmos o seu valor (números de quartos, capacidade da garagem, piscina, etc.);
+- Como podemos melhorar a convergência durante o aprendizado?
+     - Gradiente desc. em lotes (mini-batches) ou online;
+     - Converge mais rápido do que o gradiente desc. (pode não avaliar todo o espaço de busca);
+     - Parecido com o gradiente desc. online, porém é aplicado sobre amostragens aleatórias do conjunto de treinamento;
