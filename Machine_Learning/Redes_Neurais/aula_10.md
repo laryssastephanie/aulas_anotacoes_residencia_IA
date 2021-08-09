@@ -1,0 +1,13 @@
+## Redes Neurais com Percepton Multicamadas
+- Redes neurais foram amplamente utilizadas nos anos 80 e 90 e visam imitar o funcionamento do cérebro humano;
+- Sua popularidade caiu no final dos anos 90, mas voltaram à cena com novas abordagens baseadas em aprendizado em profundidade;
+- Como funcionam?
+    - Neurônio: axônio, núcleo, dendritos;
+    - Recebem impulsos elétricos pelos axônios e é propagado até os dendritos;
+- Matematicamente falando, o neurônio pode ser representado por:
+    - Entrada/Bias (Axônio), Função de ativação (núcleo) e saída (dendritos);
+- Alguns exemplos de função de ativação:
+    - Função logística (sigmoide);
+    - Função limiar (degrau);
+    - Função tangente hiperbólica;
+- É desejável que a função de ativação seja derivável;

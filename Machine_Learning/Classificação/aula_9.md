@@ -5,4 +5,5 @@
 - Possui função sigmóide;
 - Temos dois problemas principais com MSE quando usamos a técnica de Regressão Logística:
     - A MSE não penaliza muito fortemente erros de classificação e pode levar a um aprendizado insuficiente;
+        - Se não penalizar muito os erros, o aprendizado pode não ser tão bom;
     - A função de custo MSE não é convexa para o Regressor Logístico (provado matematicamente).
