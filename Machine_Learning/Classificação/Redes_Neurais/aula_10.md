@@ -34,3 +34,8 @@
 
 ### Perceptron Multicamadas (Multilayer Perceptron - MLP)
 - Basicamente, é um grupo de neurônios que, combinados, permitem o aprendizado de um número maior de funções de decisão;
+- w21^1 = peso 2, do neuronio 1, na camada 1;
+- Para um problema com c classes, nossa camada de saída necessita de c neurônios;
+- Existem diversos algoritmos de treinamento para RN MLP, em que o mais conhecido é chamado de retropropagação, do inglês backpropagation;
+- Ele possui dois passos: (i) propagação para frente (forward propagation) e (ii) propagação para trás (backpropagation);
+- Backward - Calcula o erro na camada de saída e propaga para trás, depois volta, para ir ajustando até aprender;
