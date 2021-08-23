@@ -39,3 +39,15 @@
 - Existem diversos algoritmos de treinamento para RN MLP, em que o mais conhecido é chamado de retropropagação, do inglês backpropagation;
 - Ele possui dois passos: (i) propagação para frente (forward propagation) e (ii) propagação para trás (backpropagation);
 - Backward - Calcula o erro na camada de saída e propaga para trás, depois volta, para ir ajustando até aprender;
+
+### Regularização
+- Com o intuito de evitar com que nossos modelos tornem-se muito 'especializados', podemos fazer uso de técnicas de regularização;
+- Três casos que podem ocorrer:
+    - Subtreinamento (underfitting);
+    - Bom treinamento;
+    - Sobretreinamento (overfitting);
+- Como podemos minimizar o efeito dos pesos associados aos graus maiores? Uma solução para penalizá-los seria multiplicá-los por valores altos;
+- Como o objetivo é minimizar a função de custo, a tendência é que o gradiente descendente atribua valores muito pequenos para w3 e w4 no intuito de diminuir a sua influência no valor final;
+- Assim, a regularização visa atribuir valores pequenos para os elementos em w de tal forma a termos funções 'mais simples'.
+
+### Máquinas de Vetores de Suporte (SVM)
