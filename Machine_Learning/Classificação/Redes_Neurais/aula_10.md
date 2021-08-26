@@ -51,3 +51,18 @@
 - Assim, a regularização visa atribuir valores pequenos para os elementos em w de tal forma a termos funções 'mais simples'.
 
 ### Máquinas de Vetores de Suporte (SVM)
+- São baseadas em conceitos da teoria do aprendizado estatístico, desenvolvida por Vapnik e colegas;
+- Basicamente, a ideia seria estudar garantias teóricas sobre condições necessárias para o processo de aprendizado;
+- Como dito anteriormente, temos duas principais limitações durante um processo de aprendizagem;
+    - overfitting: baixa capacidade de generalização no conjunto de teste;
+    - underfitting: baixa capacidade de aprendizado no conjunto de treinamento.
+- Qual seria a situação ideal?
+    - Um compromisso entre as duas situações, ou seja, uma relação custo-benefício entre supertreinamento e subtreinamento;
+- Quando o aprendizado é consistente, ou seja, quando f* consegue aprender dos dados?
+    - Primeiramente precisamos definir o espaço de funções F que o nosso classificador fará parte. 
+    - Fall: espaço de todas as funções possíveis;
+    - F: espaço das funções que o classificador pode aprender;
+    - fbayes: classificador de mínimo risco possível;
+    - fmin: classificador de mínimo risco em F.
+- Fazemos uma analogia com o algoritmo do Perceptron no sentido que ambos utilizam uma função de decisão linear, ou seja, um hiperplano. A diferença é que o hiperplano do Perceptron não possui propriedades ótimas que o hiperplano encontrado no SVM possui;
+- Quando temos um problema de otimização sujeito à restrições de desigualdade, utilizamos duas principais ferramentas matemáticas: condições `KKT (Karush-Kuhn-Tucker)` e os chamados `Multiplicadores de Lagrange`;
