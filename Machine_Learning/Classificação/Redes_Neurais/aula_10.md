@@ -66,3 +66,14 @@
     - fmin: classificador de mínimo risco em F.
 - Fazemos uma analogia com o algoritmo do Perceptron no sentido que ambos utilizam uma função de decisão linear, ou seja, um hiperplano. A diferença é que o hiperplano do Perceptron não possui propriedades ótimas que o hiperplano encontrado no SVM possui;
 - Quando temos um problema de otimização sujeito à restrições de desigualdade, utilizamos duas principais ferramentas matemáticas: condições `KKT (Karush-Kuhn-Tucker)` e os chamados `Multiplicadores de Lagrange`;
+
+- Um outro desafio é: como tornar SVM válido para problems de classificação com múltiplas classes? Basicamente, para um problema com c classes temos duas abordagens:
+    - OVA (One versus all): treinamos c SVM's e removemos a função sgn da Equação 26 (slide) para que a mesma retorne uma pontuação (score). A classe da amostra corresponde àquela SVM que retornou a maior pontuação. Essa pontuação geralmente é calculada como sendo a distância da amostra a ser classificada até o hiperplano de separação (maior a distância, maior a pontuação);
+    - OVO (one versus one): treinamos c(c-1)/2 classificadores SVM, isto é, todos os pares de combinações entre classes. Para cada combinação, o classificador vencedor recebe um voto, e a classe escolhidaa é a do classificador que recebeu a maior quantidade de votos. Uma desvantagem dessa abordagem é que, quando o número de classes é alto, ela é muito custosa.
+
+### Floresta de Caminhos ótimos
+- Existe um conjunto de abordagens que tratam o problema de classificção de padrões como sendo uma tarefa de particionamento em grafos. No entanto, o que seriam esses chamados grafos?
+- Grafos podem ser entendidos como estruturas de dados que são compostas por vértices e arestas e que, dependendo de suas propriedades, podem modelar diferentes problemas.
+- A OPF visa modelar o problema de classificação das amostras como sendo uma tareda de particionamento de um grafo em grupos de amostras com o mesmo rótulo;
+- Neste sentido, as amostras do conjunto de dados correspondem aos nós do grafo e as arestas são definidas por alguma relação de adjacência escolhida previamente;
+- Possui, atualmente, versões supervisionadas, não supervisionadas e semi-supervisionadas.
