@@ -77,3 +77,13 @@
 - A OPF visa modelar o problema de classificação das amostras como sendo uma tareda de particionamento de um grafo em grupos de amostras com o mesmo rótulo;
 - Neste sentido, as amostras do conjunto de dados correspondem aos nós do grafo e as arestas são definidas por alguma relação de adjacência escolhida previamente;
 - Possui, atualmente, versões supervisionadas, não supervisionadas e semi-supervisionadas.
+
+### k-Vizinhos mais Próximos (KNN)
+- Uma das técnicas mais tradicionais em aprendizado de máquina;
+- Dada uma amostra x qualquer do conjunto de teste, o seu rótulo y será o mesmo da amostra mais próxima do conjunto de treinamento;
+- É interessante para problemas de recomendação e recuperação, dado que faz uso das amostras mais próximas para tomada de decisão;
+- Outro ponto importante diz respeito à regressão por k-NN, que também é bastante simples;
+    - Neste caso, ao conectar à amostra de teste aos seus k cizinhos mais próximos, basta utilizar, por exemplo, o valor médio de suas saídas como sendo  o valor a ser estimado;
+- Uma variante do kNN é a sua versão ponderada, conhecida por wwighted kNN;
+    - A ideia consiste em associar pesos à cada um dos k vizinhos mais próximos, que podem ser o inverso de sua distência para a amostra em questão, por exemplo;
+    
