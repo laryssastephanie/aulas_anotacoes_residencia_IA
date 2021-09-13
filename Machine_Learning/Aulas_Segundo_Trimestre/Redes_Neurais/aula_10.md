@@ -86,4 +86,18 @@
     - Neste caso, ao conectar à amostra de teste aos seus k cizinhos mais próximos, basta utilizar, por exemplo, o valor médio de suas saídas como sendo  o valor a ser estimado;
 - Uma variante do kNN é a sua versão ponderada, conhecida por wwighted kNN;
     - A ideia consiste em associar pesos à cada um dos k vizinhos mais próximos, que podem ser o inverso de sua distência para a amostra em questão, por exemplo;
-    
+
+### Classificador Bayesiano
+- A teoria de Decisão Bayesiana é um ferramental matemático que nos prmite construir classificadores paramétricos, ou seja, técnicas que assimem a hipótese de que os dados seguem alguma distribuição (hipótese Gaussiana na grande maioria dos casos);
+- p(x|wi): Probabilidade condicional da classe wi (verossimilhança) - Ela descreve a função de densidade de probabilidade, ou seja, qual o comportamento de x dentro da classe wi;
+    - Ex: Se x corresponde à altura do jogador em metros, p(x|wi) descreve a distribuição das alturas dos jogadores de futebol e p(x|w2) descreve a distribuição das alturas dos jogadores de basquete.
+- p(wi|x): Probabilidade a posteriori da classe wi, isto é, a probabilidade de decidirmos pela classe wi dada que observamos a amostra x;
+
+### k-Médias
+- Existem problemas para os quais não temos acesso aos rótulos da classe, ou seja, temos um problema de aprendizado não supervisionado (agrupamento);
+- O k-Means objetiva agrupar dados com base nas distancias entre as amostras. Geralmente, a distancia euclidiana é uma das mais utilizadas;
+- O objetivo da técnica é particionar as amostras em k < m grupos;
+
+### Modelo de Mistura de Gaussianas
+- É uma técnica de aprendizado não supervisionado que pode ser entendida como uma generalização do k-médias. Ao invés de estimarmos os centroides de cada agrupamento, tentamos estimar também a forma e proporção de cada Gaussiana que compõe a mistura;
+- 
