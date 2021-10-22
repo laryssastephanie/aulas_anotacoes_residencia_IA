@@ -110,4 +110,12 @@
 
 ### Modelo de Mistura de Gaussianas
 - É uma técnica de aprendizado não supervisionado que pode ser entendida como uma generalização do k-médias. Ao invés de estimarmos os centroides de cada agrupamento, tentamos estimar também a forma e proporção de cada Gaussiana que compõe a mistura;
-- 
+
+### Análise de Componentes Principais
+- Técnicas de redução de dimensionalidade/transformação do espaço de características visam obter versões mais compactas/representativas de nossos dados;
+- Usualmente, em problemas de classificação, temos a impressão de, quanto mais características temos, melhor será a taxa de acerto de nossa técnica;
+- Maldição da dimensionalidade = quando temos número limitado de amostras;
+- Fenômeno de Hughes: para um número finito de amostras, existe uma dimensionalidade d* que, após este valor, o desempenho da taxa de classificação diminui;
+- Número de amostras como função das características: em classificadores não paramétricos, o número de amostras deve ser uma função exponencial do numero de características;
+- Gaussianas multivariadas: a densidade das amostras tende a se concentrar na cauda da distribuição, ou seja, longe da média amostral, dificultando a classificação.
+- Autovalores e Autovetores...
