@@ -119,3 +119,8 @@
 - Número de amostras como função das características: em classificadores não paramétricos, o número de amostras deve ser uma função exponencial do numero de características;
 - Gaussianas multivariadas: a densidade das amostras tende a se concentrar na cauda da distribuição, ou seja, longe da média amostral, dificultando a classificação.
 - Autovalores e Autovetores...
+
+### Análise Discriminante Linear
+- Linear Discriminant Analysis (LDA), é uma técnica supervisionada que objetiva maximizar a separabilidade entre as classes;
+- A ideia é gerar agrupamentos em que a distância intraclasse (elementos da mesma classe) seja pequena, enquanto que a distância interclasse (elementos de classes distintas) seja grande;
+- Queremos, então, gerar agrupamentos compactos e distantes.
